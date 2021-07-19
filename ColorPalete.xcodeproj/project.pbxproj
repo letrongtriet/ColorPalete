@@ -7,20 +7,90 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2148F126A58E6C00D8A1A3 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2148F026A58E6C00D8A1A3 /* AppConfig.swift */; };
+		0F2148F326A5904800D8A1A3 /* ColorAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2148F226A5904800D8A1A3 /* ColorAPI.swift */; };
+		0F2148F526A5926400D8A1A3 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2148F426A5926400D8A1A3 /* UIColor+Extension.swift */; };
+		0F68A0BF26A58A830013C06C /* APIDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0BE26A58A830013C06C /* APIDefinition.swift */; };
+		0F68A0C126A58B5C0013C06C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0C026A58B5C0013C06C /* NetworkManager.swift */; };
+		0F68A0C326A58BC70013C06C /* LocalStorageInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0C226A58BC70013C06C /* LocalStorageInterface.swift */; };
+		0F68A0C526A58BEB0013C06C /* LocalStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0C426A58BEB0013C06C /* LocalStorageImpl.swift */; };
+		0F68A0C726A58CDD0013C06C /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0C626A58CDD0013C06C /* UserDefaultsKey.swift */; };
+		0F68A0C926A58D2A0013C06C /* TokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0C826A58D2A0013C06C /* TokenResponse.swift */; };
+		0F68A0CB26A58D300013C06C /* TokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0CA26A58D300013C06C /* TokenRequest.swift */; };
+		0F68A0CE26A58D6B0013C06C /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0CD26A58D6B0013C06C /* Encodable+Extension.swift */; };
+		0F68A0D426A58DE30013C06C /* TokenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F68A0D326A58DE30013C06C /* TokenAPI.swift */; };
+		0F6CB77626A59AE0003884F1 /* ColorCreationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB77526A59AE0003884F1 /* ColorCreationRequest.swift */; };
+		0F6CB77826A59AE9003884F1 /* ColorCreationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB77726A59AE9003884F1 /* ColorCreationResponse.swift */; };
+		0F6CB77A26A59B7C003884F1 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB77926A59B7C003884F1 /* ColorService.swift */; };
+		0F6CB77E26A59BB6003884F1 /* ColorServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB77D26A59BB6003884F1 /* ColorServiceImpl.swift */; };
+		0F6CB78026A59CB0003884F1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB77F26A59CB0003884F1 /* Colors.swift */; };
+		0F6CB78226A5A2D5003884F1 /* ColorPaleteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB78126A5A2D5003884F1 /* ColorPaleteViewModel.swift */; };
+		0F6CB78526A5A3E8003884F1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB78426A5A3E8003884F1 /* Coordinator.swift */; };
+		0F6CB78726A5A41C003884F1 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB78626A5A41C003884F1 /* AppCoordinator.swift */; };
+		0F6CB78926A5BDFF003884F1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB78826A5BDFF003884F1 /* HomeCoordinator.swift */; };
+		0F6CB78C26A5C2B3003884F1 /* ColorPaleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB78A26A5C2B3003884F1 /* ColorPaleteViewController.swift */; };
+		0F6CB78D26A5C2B3003884F1 /* ColorPaleteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6CB78B26A5C2B3003884F1 /* ColorPaleteViewController.xib */; };
+		0F6CB79026A5C2C8003884F1 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB78E26A5C2C8003884F1 /* ColorPickerViewController.swift */; };
+		0F6CB79126A5C2C8003884F1 /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6CB78F26A5C2C8003884F1 /* ColorPickerViewController.xib */; };
+		0F6CB79326A5C35F003884F1 /* ColorPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB79226A5C35F003884F1 /* ColorPickerViewModel.swift */; };
+		0F6CB79526A5C5C3003884F1 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB79426A5C5C3003884F1 /* KeychainWrapper.swift */; };
+		0F6CB79726A5D46B003884F1 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB79626A5D46B003884F1 /* Identifiable.swift */; };
+		0F6CB79A26A5D55F003884F1 /* ColorPaleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB79926A5D55F003884F1 /* ColorPaleteView.swift */; };
+		0F6CB79C26A5D5E8003884F1 /* ColorPaleteViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB79B26A5D5E8003884F1 /* ColorPaleteViewController+View.swift */; };
+		0F6CB79F26A5DD2D003884F1 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB79E26A5DD2D003884F1 /* CustomSlider.swift */; };
+		0F6CB7A126A5E047003884F1 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB7A026A5E047003884F1 /* ColorPickerView.swift */; };
+		0F6CB7A326A5E176003884F1 /* ColorPickerViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB7A226A5E176003884F1 /* ColorPickerViewController+View.swift */; };
+		0F6CB7A526A5E322003884F1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB7A426A5E322003884F1 /* UIView+Extension.swift */; };
+		0F6CB7A726A5FEB5003884F1 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB7A626A5FEB5003884F1 /* CALayer+Extension.swift */; };
+		0F6CB7A926A60477003884F1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB7A826A60477003884F1 /* UIViewController+Extension.swift */; };
+		0F6CB7AD26A60DDF003884F1 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6CB7AB26A60DDF003884F1 /* ColorCollectionViewCell.swift */; };
+		0F6CB7AE26A60DDF003884F1 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F6CB7AC26A60DDF003884F1 /* ColorCollectionViewCell.xib */; };
 		0F7EB5E726A5899400645124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7EB5E626A5899400645124 /* AppDelegate.swift */; };
-		0F7EB5E926A5899400645124 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7EB5E826A5899400645124 /* SceneDelegate.swift */; };
-		0F7EB5EB26A5899400645124 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7EB5EA26A5899400645124 /* ViewController.swift */; };
-		0F7EB5EE26A5899400645124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7EB5EC26A5899400645124 /* Main.storyboard */; };
 		0F7EB5F026A5899500645124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F7EB5EF26A5899500645124 /* Assets.xcassets */; };
 		0F7EB5F326A5899500645124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7EB5F126A5899500645124 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F2148F026A58E6C00D8A1A3 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		0F2148F226A5904800D8A1A3 /* ColorAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorAPI.swift; sourceTree = "<group>"; };
+		0F2148F426A5926400D8A1A3 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0F68A0BE26A58A830013C06C /* APIDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDefinition.swift; sourceTree = "<group>"; };
+		0F68A0C026A58B5C0013C06C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		0F68A0C226A58BC70013C06C /* LocalStorageInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageInterface.swift; sourceTree = "<group>"; };
+		0F68A0C426A58BEB0013C06C /* LocalStorageImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageImpl.swift; sourceTree = "<group>"; };
+		0F68A0C626A58CDD0013C06C /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		0F68A0C826A58D2A0013C06C /* TokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenResponse.swift; sourceTree = "<group>"; };
+		0F68A0CA26A58D300013C06C /* TokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRequest.swift; sourceTree = "<group>"; };
+		0F68A0CD26A58D6B0013C06C /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		0F68A0D326A58DE30013C06C /* TokenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAPI.swift; sourceTree = "<group>"; };
+		0F6CB77526A59AE0003884F1 /* ColorCreationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCreationRequest.swift; sourceTree = "<group>"; };
+		0F6CB77726A59AE9003884F1 /* ColorCreationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCreationResponse.swift; sourceTree = "<group>"; };
+		0F6CB77926A59B7C003884F1 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
+		0F6CB77D26A59BB6003884F1 /* ColorServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorServiceImpl.swift; sourceTree = "<group>"; };
+		0F6CB77F26A59CB0003884F1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0F6CB78126A5A2D5003884F1 /* ColorPaleteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaleteViewModel.swift; sourceTree = "<group>"; };
+		0F6CB78426A5A3E8003884F1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0F6CB78626A5A41C003884F1 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0F6CB78826A5BDFF003884F1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		0F6CB78A26A5C2B3003884F1 /* ColorPaleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaleteViewController.swift; sourceTree = "<group>"; };
+		0F6CB78B26A5C2B3003884F1 /* ColorPaleteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorPaleteViewController.xib; sourceTree = "<group>"; };
+		0F6CB78E26A5C2C8003884F1 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		0F6CB78F26A5C2C8003884F1 /* ColorPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
+		0F6CB79226A5C35F003884F1 /* ColorPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewModel.swift; sourceTree = "<group>"; };
+		0F6CB79426A5C5C3003884F1 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		0F6CB79626A5D46B003884F1 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		0F6CB79926A5D55F003884F1 /* ColorPaleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPaleteView.swift; sourceTree = "<group>"; };
+		0F6CB79B26A5D5E8003884F1 /* ColorPaleteViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorPaleteViewController+View.swift"; sourceTree = "<group>"; };
+		0F6CB79E26A5DD2D003884F1 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		0F6CB7A026A5E047003884F1 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		0F6CB7A226A5E176003884F1 /* ColorPickerViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorPickerViewController+View.swift"; sourceTree = "<group>"; };
+		0F6CB7A426A5E322003884F1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0F6CB7A626A5FEB5003884F1 /* CALayer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
+		0F6CB7A826A60477003884F1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		0F6CB7AB26A60DDF003884F1 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F6CB7AC26A60DDF003884F1 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
 		0F7EB5E326A5899400645124 /* ColorPalete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPalete.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7EB5E626A5899400645124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F7EB5E826A5899400645124 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F7EB5EA26A5899400645124 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0F7EB5ED26A5899400645124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F7EB5EF26A5899500645124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F7EB5F226A5899500645124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F7EB5F426A5899500645124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +107,189 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F68A0B826A58A2F0013C06C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0BD26A58A770013C06C /* Implementation */,
+				0F68A0BC26A58A710013C06C /* Interface */,
+				0F6CB79426A5C5C3003884F1 /* KeychainWrapper.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0F68A0B926A58A350013C06C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F6CB7AA26A60DCA003884F1 /* Cell */,
+				0F6CB79D26A5DB83003884F1 /* CustomView */,
+				0F6CB79826A5D556003884F1 /* Interface */,
+				0F7EB5F126A5899500645124 /* LaunchScreen.storyboard */,
+				0F68A0BB26A58A3F0013C06C /* ViewModel */,
+				0F6CB78A26A5C2B3003884F1 /* ColorPaleteViewController.swift */,
+				0F6CB78B26A5C2B3003884F1 /* ColorPaleteViewController.xib */,
+				0F6CB78E26A5C2C8003884F1 /* ColorPickerViewController.swift */,
+				0F6CB78F26A5C2C8003884F1 /* ColorPickerViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F68A0BA26A58A3B0013C06C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0C826A58D2A0013C06C /* TokenResponse.swift */,
+				0F68A0CA26A58D300013C06C /* TokenRequest.swift */,
+				0F6CB77526A59AE0003884F1 /* ColorCreationRequest.swift */,
+				0F6CB77726A59AE9003884F1 /* ColorCreationResponse.swift */,
+				0F6CB77F26A59CB0003884F1 /* Colors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F68A0BB26A58A3F0013C06C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F6CB78126A5A2D5003884F1 /* ColorPaleteViewModel.swift */,
+				0F6CB79226A5C35F003884F1 /* ColorPickerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0F68A0BC26A58A710013C06C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0D226A58DB20013C06C /* Storage */,
+				0F68A0D026A58DA90013C06C /* Network */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		0F68A0BD26A58A770013C06C /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0D126A58DAD0013C06C /* Storage */,
+				0F68A0CF26A58DA30013C06C /* Network */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		0F68A0CC26A58D570013C06C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0CD26A58D6B0013C06C /* Encodable+Extension.swift */,
+				0F2148F426A5926400D8A1A3 /* UIColor+Extension.swift */,
+				0F6CB79626A5D46B003884F1 /* Identifiable.swift */,
+				0F6CB7A426A5E322003884F1 /* UIView+Extension.swift */,
+				0F6CB7A626A5FEB5003884F1 /* CALayer+Extension.swift */,
+				0F6CB7A826A60477003884F1 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0F68A0CF26A58DA30013C06C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0C026A58B5C0013C06C /* NetworkManager.swift */,
+				0F6CB77D26A59BB6003884F1 /* ColorServiceImpl.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0F68A0D026A58DA90013C06C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0BE26A58A830013C06C /* APIDefinition.swift */,
+				0F68A0D326A58DE30013C06C /* TokenAPI.swift */,
+				0F2148F226A5904800D8A1A3 /* ColorAPI.swift */,
+				0F6CB77926A59B7C003884F1 /* ColorService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0F68A0D126A58DAD0013C06C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0C426A58BEB0013C06C /* LocalStorageImpl.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0F68A0D226A58DB20013C06C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0C226A58BC70013C06C /* LocalStorageInterface.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		0F68A0D526A58E0E0013C06C /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				0F68A0C626A58CDD0013C06C /* UserDefaultsKey.swift */,
+				0F2148F026A58E6C00D8A1A3 /* AppConfig.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		0F68A0D626A58E200013C06C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F7EB5EF26A5899500645124 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0F68A0D726A58E2B0013C06C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0F7EB5E626A5899400645124 /* AppDelegate.swift */,
+				0F68A0D526A58E0E0013C06C /* AppConfig */,
+				0F6CB78326A5A3DD003884F1 /* Coordinator */,
+				0F68A0CC26A58D570013C06C /* Extension */,
+				0F68A0BA26A58A3B0013C06C /* Model */,
+				0F68A0B826A58A2F0013C06C /* Service */,
+				0F68A0B926A58A350013C06C /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0F6CB78326A5A3DD003884F1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0F6CB78426A5A3E8003884F1 /* Coordinator.swift */,
+				0F6CB78626A5A41C003884F1 /* AppCoordinator.swift */,
+				0F6CB78826A5BDFF003884F1 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0F6CB79826A5D556003884F1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0F6CB79926A5D55F003884F1 /* ColorPaleteView.swift */,
+				0F6CB79B26A5D5E8003884F1 /* ColorPaleteViewController+View.swift */,
+				0F6CB7A026A5E047003884F1 /* ColorPickerView.swift */,
+				0F6CB7A226A5E176003884F1 /* ColorPickerViewController+View.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		0F6CB79D26A5DB83003884F1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				0F6CB79E26A5DD2D003884F1 /* CustomSlider.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		0F6CB7AA26A60DCA003884F1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0F6CB7AB26A60DDF003884F1 /* ColorCollectionViewCell.swift */,
+				0F6CB7AC26A60DDF003884F1 /* ColorCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		0F7EB5DA26A5899400645124 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +309,9 @@
 		0F7EB5E526A5899400645124 /* ColorPalete */ = {
 			isa = PBXGroup;
 			children = (
-				0F7EB5E626A5899400645124 /* AppDelegate.swift */,
-				0F7EB5E826A5899400645124 /* SceneDelegate.swift */,
-				0F7EB5EA26A5899400645124 /* ViewController.swift */,
-				0F7EB5EC26A5899400645124 /* Main.storyboard */,
-				0F7EB5EF26A5899500645124 /* Assets.xcassets */,
-				0F7EB5F126A5899500645124 /* LaunchScreen.storyboard */,
 				0F7EB5F426A5899500645124 /* Info.plist */,
+				0F68A0D626A58E200013C06C /* Resources */,
+				0F68A0D726A58E2B0013C06C /* Sources */,
 			);
 			path = ColorPalete;
 			sourceTree = "<group>";
@@ -125,8 +374,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F7EB5F326A5899500645124 /* LaunchScreen.storyboard in Resources */,
+				0F6CB78D26A5C2B3003884F1 /* ColorPaleteViewController.xib in Resources */,
+				0F6CB7AE26A60DDF003884F1 /* ColorCollectionViewCell.xib in Resources */,
+				0F6CB79126A5C2C8003884F1 /* ColorPickerViewController.xib in Resources */,
 				0F7EB5F026A5899500645124 /* Assets.xcassets in Resources */,
-				0F7EB5EE26A5899400645124 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +388,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F7EB5EB26A5899400645124 /* ViewController.swift in Sources */,
+				0F6CB7A526A5E322003884F1 /* UIView+Extension.swift in Sources */,
+				0F68A0C726A58CDD0013C06C /* UserDefaultsKey.swift in Sources */,
+				0F6CB79F26A5DD2D003884F1 /* CustomSlider.swift in Sources */,
+				0F6CB79A26A5D55F003884F1 /* ColorPaleteView.swift in Sources */,
+				0F6CB78026A59CB0003884F1 /* Colors.swift in Sources */,
+				0F68A0C126A58B5C0013C06C /* NetworkManager.swift in Sources */,
+				0F6CB7AD26A60DDF003884F1 /* ColorCollectionViewCell.swift in Sources */,
+				0F6CB78C26A5C2B3003884F1 /* ColorPaleteViewController.swift in Sources */,
+				0F6CB77826A59AE9003884F1 /* ColorCreationResponse.swift in Sources */,
+				0F6CB77626A59AE0003884F1 /* ColorCreationRequest.swift in Sources */,
+				0F2148F326A5904800D8A1A3 /* ColorAPI.swift in Sources */,
+				0F6CB78726A5A41C003884F1 /* AppCoordinator.swift in Sources */,
+				0F2148F126A58E6C00D8A1A3 /* AppConfig.swift in Sources */,
+				0F68A0C926A58D2A0013C06C /* TokenResponse.swift in Sources */,
+				0F6CB7A126A5E047003884F1 /* ColorPickerView.swift in Sources */,
+				0F6CB78226A5A2D5003884F1 /* ColorPaleteViewModel.swift in Sources */,
+				0F6CB79526A5C5C3003884F1 /* KeychainWrapper.swift in Sources */,
 				0F7EB5E726A5899400645124 /* AppDelegate.swift in Sources */,
-				0F7EB5E926A5899400645124 /* SceneDelegate.swift in Sources */,
+				0F68A0BF26A58A830013C06C /* APIDefinition.swift in Sources */,
+				0F6CB7A926A60477003884F1 /* UIViewController+Extension.swift in Sources */,
+				0F6CB7A326A5E176003884F1 /* ColorPickerViewController+View.swift in Sources */,
+				0F68A0CE26A58D6B0013C06C /* Encodable+Extension.swift in Sources */,
+				0F6CB79026A5C2C8003884F1 /* ColorPickerViewController.swift in Sources */,
+				0F6CB78526A5A3E8003884F1 /* Coordinator.swift in Sources */,
+				0F6CB79326A5C35F003884F1 /* ColorPickerViewModel.swift in Sources */,
+				0F68A0D426A58DE30013C06C /* TokenAPI.swift in Sources */,
+				0F68A0C326A58BC70013C06C /* LocalStorageInterface.swift in Sources */,
+				0F2148F526A5926400D8A1A3 /* UIColor+Extension.swift in Sources */,
+				0F6CB77A26A59B7C003884F1 /* ColorService.swift in Sources */,
+				0F6CB7A726A5FEB5003884F1 /* CALayer+Extension.swift in Sources */,
+				0F6CB79726A5D46B003884F1 /* Identifiable.swift in Sources */,
+				0F6CB77E26A59BB6003884F1 /* ColorServiceImpl.swift in Sources */,
+				0F68A0C526A58BEB0013C06C /* LocalStorageImpl.swift in Sources */,
+				0F68A0CB26A58D300013C06C /* TokenRequest.swift in Sources */,
+				0F6CB79C26A5D5E8003884F1 /* ColorPaleteViewController+View.swift in Sources */,
+				0F6CB78926A5BDFF003884F1 /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0F7EB5EC26A5899400645124 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0F7EB5ED26A5899400645124 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0F7EB5F126A5899500645124 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,6 +564,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ColorPalete/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.letrongtriet.ColorPalete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,6 +583,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ColorPalete/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +591,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.letrongtriet.ColorPalete;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
