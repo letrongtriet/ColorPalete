@@ -20,4 +20,13 @@ extension ColorPaleteViewController: ColorPaleteView {
     func showEmptyState(_ shouldShow: Bool) {
         firstTimeLabel.isHidden = !shouldShow
     }
+
+    func userDidLogout() {
+        colorsString = []
+        collectionView.reloadData()
+        collectionView.setNeedsLayout()
+        collectionView.layoutIfNeeded()
+        collectionViewHeightConstraint.constant = collectionView.contentSize.height
+        view.layoutIfNeeded()
+    }
 }

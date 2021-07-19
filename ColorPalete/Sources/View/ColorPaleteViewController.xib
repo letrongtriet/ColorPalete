@@ -74,7 +74,7 @@
                     </constraints>
                 </scrollView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your first palette" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G4-LZ-lQT">
-                    <rect key="frame" x="117.5" y="389.5" width="179.5" height="21"/>
+                    <rect key="frame" x="117.5" y="402" width="179.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -87,7 +87,7 @@
                 <constraint firstItem="Dgy-Ol-cbJ" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" priority="250" id="OjI-7E-Afm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OpQ-Up-TNV" secondAttribute="bottom" id="P4O-V4-8KI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OpQ-Up-TNV" secondAttribute="trailing" id="XsC-Qg-YLP"/>
-                <constraint firstItem="0G4-LZ-lQT" firstAttribute="centerY" secondItem="taA-ig-5uS" secondAttribute="centerY" multiplier="0.87" id="lkI-DW-N8a"/>
+                <constraint firstItem="0G4-LZ-lQT" firstAttribute="bottom" secondItem="taA-ig-5uS" secondAttribute="top" id="lz6-Lt-sE5"/>
                 <constraint firstItem="OpQ-Up-TNV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="o6H-wt-AK3"/>
                 <constraint firstItem="0G4-LZ-lQT" firstAttribute="centerX" secondItem="taA-ig-5uS" secondAttribute="centerX" id="orR-Gw-RRc"/>
             </constraints>

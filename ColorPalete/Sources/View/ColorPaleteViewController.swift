@@ -44,6 +44,8 @@ class ColorPaleteViewController: UIViewController {
         ColorCollectionViewCell.registerNib(in: collectionView)
         collectionView.delegate = self
         collectionView.dataSource = self
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(logout))
     }
 
     private func addTapGesture() {
@@ -56,6 +58,11 @@ class ColorPaleteViewController: UIViewController {
     private func userDidTapAddButton() {
         addButtonImageView.scaleAnimation()
         viewModel.userDidTapAddButton()
+    }
+
+    @objc
+    private func logout() {
+        viewModel.userDidTapLogout()
     }
 }
 

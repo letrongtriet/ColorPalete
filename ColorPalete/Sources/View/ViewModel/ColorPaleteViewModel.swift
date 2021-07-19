@@ -63,4 +63,10 @@ final class ColorPaleteViewModel {
     func userDidTapAddButton() {
         delegate?.showColorPicker()
     }
+
+    func userDidTapLogout() {
+        localStorageInterface.logout()
+        view?.userDidLogout()
+        view?.showEmptyState(true)
+    }
 }

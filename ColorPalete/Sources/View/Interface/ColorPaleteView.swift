@@ -10,4 +10,5 @@ import Foundation
 protocol ColorPaleteView: AnyObject {
     func updateView(with colors: Colors)
     func showEmptyState(_ shouldShow: Bool)
+    func userDidLogout()
 }
